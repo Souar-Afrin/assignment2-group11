@@ -1,4 +1,3 @@
-/* Reset & basics */
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
@@ -11,7 +10,6 @@ body {
     color: inherit;
   }
   
-  /* 🔝 Top Bar Navigation */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -44,7 +42,6 @@ body {
     color: #2563eb;
   }
   
-  /* 🌟 Hero Section */
   .hero {
     background: linear-gradient(120deg, #4f46e5, #3b82f6);
     color: white;
@@ -62,7 +59,6 @@ body {
     opacity: 0.95;
   }
   
-  /* 📄 Main Container */
   .container {
     max-width: 1100px;
     margin: auto;
@@ -86,7 +82,6 @@ body {
     font-size: 1.1rem;
   }
   
-  /* 📦 Footer */
   footer {
     text-align: center;
     background: #e2e8f0;
