@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SF Drug Crime Data Story</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <!-- 🔝 Sticky Top Nav Bar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h1>📊 SF Drug Crime Story</h1>
+    </div>
+    <div class="nav-right">
+      <a href="#intro">Intro</a>
+      <a href="#yearly">Yearly Trends</a>
+      <a href="#map">Heat Map</a>
+      <a href="#interactive">Interactive</a>
+    </div>
+  </nav>
+
+  <!-- 🌟 Slim Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+        <h1>
+            02806 Social Data Analysis and visualizations</h1>
+      <p>Assignment 2 – Group 11 | DTU 2025</p>
+    </div>
+  </header>
+
+  <!-- 💡 Main Content -->
+  <main class="container">
+
+    <section id="intro">
+      <h2>Introduction</h2>
+      <p>This website explores patterns in drug-related crimes in San Francisco using narrative data visualization. We focus on how crime evolves over time, its geographic density, and yearly changes through interactive visuals.</p>
+    </section>
+
+    <section id="yearly">
+      <h2>1. Yearly Trends in Drug-Related Incidents</h2>
+      <p>This chart shows how the number of drug-related crimes evolved over the years. Notice the sharp drop in 2020, likely influenced by pandemic-related factors.</p>
+      <iframe src="visualizations/output/chart1.html" width="100%" height="600" style="border:none;"></iframe>
+    </section>
+
+    <section id="map">
+      <h2>2. Heat Map of Crime Locations</h2>
+      <p>This heat map highlights areas in San Francisco with high concentrations of drug-related incidents.</p>
+      <iframe src="visualizations/output/map1.html" width="100%" height="600" style="border:none;"></iframe>
+    </section>
+
+    <section id="interactive">
+      <h2>3. Interactive Map by Year</h2>
+      <p>Use the dropdown to select a year and explore the locations of reported drug-related crimes in San Francisco for that specific period.</p>
+      <iframe src="visualizations/output/interactive_plot.html" width="100%" height="600" style="border:none;"></iframe>
+    </section>
+
+  </main>
+
+  <!-- 📌 Footer -->
+  <footer>
+    <p>Created by Group 11 · DTU · 2025</p>
+  </footer>
+
+</body>
+</html>

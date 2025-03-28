@@ -1,0 +1,98 @@
+/* Reset & basics */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* 🔝 Top Bar Navigation */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .nav-left h1 {
+    margin: 0;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #111827;
+  }
+  
+  .nav-right a {
+    margin-left: 1.5rem;
+    color: #374151;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-right a:hover {
+    color: #2563eb;
+  }
+  
+  /* 🌟 Hero Section */
+  .hero {
+    background: linear-gradient(120deg, #4f46e5, #3b82f6);
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+  }
+  
+  /* 📄 Main Container */
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 3rem 2rem;
+    background: white;
+    box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  }
+  
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  h2 {
+    color: #1e3a8a;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+  }
+  
+  p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+  }
+  
+  /* 📦 Footer */
+  footer {
+    text-align: center;
+    background: #e2e8f0;
+    color: #555;
+    padding: 1.5rem;
+    font-size: 1rem;
+    margin-top: 4rem;
+  }
+  
