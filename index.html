@@ -8,7 +8,6 @@
 </head>
 <body>
 
-  <!-- 🔝 Sticky Top Nav Bar -->
   <nav class="navbar">
     <div class="nav-left">
       <h1>📊 SF Drug Crime Story</h1>
@@ -21,44 +20,104 @@
     </div>
   </nav>
 
-  <!-- 🌟 Slim Hero Section -->
   <header class="hero">
     <div class="hero-content">
-        <h1>
-            02806 Social Data Analysis and visualizations</h1>
+      <h2>02806 Social Data Analysis and Visualizations</h2>
       <p>Assignment 2 – Group 11 | DTU 2025</p>
     </div>
   </header>
 
-  <!-- 💡 Main Content -->
   <main class="container">
 
     <section id="intro">
       <h2>Introduction</h2>
-      <p>This website explores patterns in drug-related crimes in San Francisco using narrative data visualization. We focus on how crime evolves over time, its geographic density, and yearly changes through interactive visuals.</p>
+      <p>
+        The San Francisco Crime Dataset (2003–2024) tracks various crimes, including drug offenses. This data story focuses on how drug-related crimes change over time and geographical location in the city.
+      </p>
     </section>
 
     <section id="yearly">
-      <h2>1. Yearly Trends in Drug-Related Incidents</h2>
-      <p>This chart shows how the number of drug-related crimes evolved over the years. Notice the sharp drop in 2020, likely influenced by pandemic-related factors.</p>
+      <h2>1. Drug-Related Crimes Over the Years (2003–2024)</h2>
+      <p>
+        One of the most interesting trends is the way drug crimes have changed in San Francisco over the years. The first visualization shows a time-series bar chart of the total number of drug-related crimes recorded each year from 2003 to 2024.
+      </p>
       <iframe src="visualizations/output/chart1.html" width="100%" height="600" style="border:none;"></iframe>
+      <p>
+        A significant policy shift occurred in October 2010 with the enactment of Senate Bill 1449. This legislation reclassified the possession of up to 28.5 grams of marijuana from a misdemeanor to a civil infraction, punishable by a fine without court appearances or criminal records. Although signed into law in October 2010, this law took effect on January 1, 2011 hence the smaller dip in 2010. [1]
+      </p>
+      <p>
+        Following the enactment of Proposition 64 in 2016, which legalized adult-use marijuana in California, the state experienced a significant decline in marijuana-related arrests. In 2017, the first year after legalization, overall marijuana arrests dropped by 56% [2]. This downward trend has continued in subsequent years.
+      </p>
+      <p>
+        Although marijuana is just one element of the drug issue, the observed trends align with the real-world timeline of marijuana legalization.
+      </p>
+      <p>
+        Now to some other factors that contribute to the trends: Covid and Fentanyl.
+      </p>
+      <p>
+        It is reasonable to say that early in the COVID-19 pandemic, drug crime rates saw a decline, most likely due to disruptions in supply chains and civilian lockdowns [3]. In California, a significant decrease in arrests was observed as law enforcement focused on pandemic-related issues.
+      </p>
+      <p>
+        As pandemic restrictions eased, drug-related offenses increased, with rising overdoses and fentanyl-related deaths. By 2021, drug crime rates in San Francisco and other major California cities climbed, prompting the California Department of Public Health to declare a public health emergency [4].
+      </p>
     </section>
 
     <section id="map">
-      <h2>2. Heat Map of Crime Locations</h2>
-      <p>This heat map highlights areas in San Francisco with high concentrations of drug-related incidents.</p>
+      <h2>2. Geographic Distribution of Drug Crimes</h2>
+      <p>
+        The second visualization focuses on the geographical aspect of drug-related crimes. Using a map of San Francisco, we plotted locations of drug crimes as a heatmap animation. This map shows that crime is centralized in specific neighborhoods, not spread out evenly across the city.
+      </p>
       <iframe src="visualizations/output/map1.html" width="100%" height="600" style="border:none;"></iframe>
+      <p>
+        Drug-related crime in San Francisco is concentrated in four key neighborhoods: the Tenderloin, South of Market (SoMa), Mission District, and Bayview-Hunters Point.
+      </p>
+      <p>
+        The Tenderloin and SoMa have been known hotspots for drug activity because of high poverty and crowded living conditions. The Mission District and Bayview-Hunters Point are smaller but still noticeable hotspots [5].
+      </p>
+      <p>
+        The exact reasons behind these concentrations are complex, but contributing factors may include socio-economic differences, historical marginalization, racial demographics, and high-density housing.
+      </p>
     </section>
 
     <section id="interactive">
-      <h2>3. Interactive Map by Year</h2>
-      <p>Use the dropdown to select a year and explore the locations of reported drug-related crimes in San Francisco for that specific period.</p>
-      <iframe src="visualizations/output/interactive_plot.html" width="100%" height="600" style="border:none;"></iframe>
+      <h2>3. Interactive Map of Drug-Related Crimes in San Francisco</h2>
+      <p>
+        The plot shows a dynamic way to explore how drug-related crimes are distributed throughout the city over time. The light blue polygons represent San Francisco’s police districts, providing geographic context and each red dot represents a drug-crime, plotted based on its recorded longitude and latitude.
+      </p>
+      <iframe src="visualizations/output/animated_heatmap.html" width="100%" height="600" style="border:none;"></iframe>
+      <p>
+        With the Year Filter, a dropdown menu allows users to filter incidents by year. Selecting a specific year dynamically updates the plotted data to show only incidents from that year. With the help of the Hover Tool, users can hover over any incident point to view detailed information, including the date, description, police district, exact location and incident number.
+      </p>
+      <p>
+        By overlaying crime data on police districts, the map provides a clear view of which areas are most affected, enabling more targeted interventions. It also enhances public accessibility to crime data, promoting awareness and accountability.
+      </p>
+      <p>
+        For example, city officials can use this tool to allocate resources more effectively, adjusting strategies based on historical crime patterns to improve public safety and crime prevention efforts.
+      </p>
+    </section>
+
+    <section id="references">
+      <h2>References</h2>
+      <ul>
+        <li>[1] <a href="https://norml.org/news/2013/08/01/california-law-change-leads-to-dramatic-decline-in-misdemeanor-marijuana-arrests?" target="_blank">norml.org</a></li>
+        <li>[2] <a href="https://news.medicalmarijuanainc.com/2018/07/24/marijuana-arrests-drop-56-in-ca-following-legalization/?" target="_blank">medicalmarijuanainc.com</a></li>
+        <li>[3] <a href="https://www.ppic.org/publication/policy-brief-assessing-the-impact-of-covid-19-on-arrests-in-california/?" target="_blank">ppic.org</a></li>
+        <li>[4] <a href="https://www.cdph.ca.gov/Programs/CCDPHP/sapb/Pages/Fentanyl.aspx?" target="_blank">cdph.ca.gov</a></li>
+        <li>[5] <a href="https://www.metropolitanshuttle.com/soma-vs-the-tenderloin-contrasting-two-of-sfs-most-talked-about-neighborhoods/" target="_blank">metropolitanshuttle.com</a></li>
+      </ul>
+    </section>
+
+    <section id="authors">
+      <h2>Author Contribution</h2>
+      <ul>
+        <li>Gyöngyösi, Márk (s232976) – Designing the visual representations of data, writing the data story</li>
+        <li>Kovács, Eszter (s233083) – Generating the visual representations of data, writing the data story</li>
+        <li>Mohammad Ali, Souar Ramzi (s191446) – Designing, developing, and structuring the webpage, and making slight adjustments to the code to generate HTML-based data visualizations</li>
+      </ul>
     </section>
 
   </main>
 
-  <!-- 📌 Footer -->
   <footer>
     <p>Created by Group 11 · DTU · 2025</p>
   </footer>
